@@ -1,41 +1,46 @@
 import Footer from "./Footer"
 import Header from "./Header"
 import Note from "./Note"
-import content from "./Content"
+import MakeNote from "./MakeNote"
+import { useState } from "react"
 
 
 function App() {
 
+  const [notes,setNotes] = useState([])
+
+  function addNote(newNote)
+  {
+      setNotes(prevNotes =>
+      {
+         return [...prevNotes,newNote]
+      })
+  }
+
+  function deleteNode(id)
+  {
+      setNotes(prevNotes => {
+      return prevNotes.filter((noteItem, index) => index !== id);
+      })
+  }
+
   return (
     <>  
       <Header/>
-      {content.map(createNote)}
-
-      {/* 
-      or use 
-      {content.map(contents =>
-          <Note
-            key={contents.id} 
-            title={contents.title} 
-            notes={contents.note} 
+      <MakeNote onAdd= {addNote}/>
+      {notes.map((noteItem,index) =>
+        <Note
+          key= {index}
+          id = {index}
+          title={noteItem.title}
+          content={noteItem.content}
+          timestamp={noteItem.time}
+          onDelete={deleteNode} 
           />
-      }
-      */}
-
+      )}
       <Footer/>
     </>
   )
 }
 
 export default App
-
-  function createNote(contents)
-  {
-      return (
-        <Note
-          key={contents.id} 
-          title={contents.title} 
-          notes={contents.note} 
-        />
-      )
-  }

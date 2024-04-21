@@ -23,6 +23,18 @@
     font-family: "McLaren", cursive;
     font-weight: 200;
     font-size: x-large;
+    display: inline;
+  }
+
+  .timer {
+    color: #fff;
+    font-family: "McLaren", cursive;
+    font-weight: 200;
+    font-size: x-large;
+    display: inline;
+    position: absolute;
+    right: 0;
+    padding: 0px 32px;
   }
   
   footer {
@@ -46,13 +58,73 @@
     float: left;
   }
   .note h1 {
+    font-family: "McLaren", cursive;
     font-size: 1.1em;
     margin-bottom: 6px;
   }
   .note p {
+    font-family: "McLaren", cursive;
     font-size: 1.1em;
     margin-bottom: 10px;
     white-space: pre-wrap;
     word-wrap: break-word;
+  }
+
+  .note h6 {
+    font-family: "McLaren", cursive;
+    font-size: xx-small;
+  }
+
+  .note button {
+    font-family: "McLaren", cursive;
+    position: relative;
+    float: right;
+    margin-right: 10px;
+    color: #f5ba13;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background: none;
+  }
+  
+  form {
+    position: relative;
+    width: 480px;
+    margin: 30px auto 20px auto;
+    background: #fff;
+    padding: 15px;
+    border-radius: 7px;
+    box-shadow: 0 1px 5px rgb(138, 137, 137);
+    font-family: "McLaren", cursive;
+  }
+  form input,
+  form textarea {
+    font-family: "McLaren", cursive;
+    width: 100%;
+    border: none;
+    padding: 4px;
+    outline: none;
+    font-size: 1.1em;
+    font-family: inherit;
+    resize: none;
+  }
+
+  form input {
+    font-size: 1.2em;
+  }
+  form button {
+    font-family: "McLaren", cursive;
+    position: absolute;
+    right: 18px;
+    bottom: -18px;
+    background: #f5ba13;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    outline: none;
   }
   
