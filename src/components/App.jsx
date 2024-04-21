@@ -1,4 +1,3 @@
-import Footer from "./Footer"
 import Header from "./Header"
 import Note from "./Note"
 import MakeNote from "./MakeNote"
@@ -38,7 +37,6 @@ function App() {
           onDelete={deleteNode} 
           />
       )}
-      <Footer/>
     </>
   )
 }

@@ -7,19 +7,19 @@
     font-family: "Montserrat", sans-serif;
   }
   body {
-    background: #eee;
+    background: #31363F;
     padding: 0 16px;
   }
   
   header {
-    background-color: #f5ba13;
+    background-color: #222831;
     margin: auto -16px;
     padding: 16px 32px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
   }
   
   header h1 {
-    color: #fff;
+    color: #EEEEEE;
     font-family: "McLaren", cursive;
     font-weight: 200;
     font-size: x-large;
@@ -27,7 +27,7 @@
   }
 
   .timer {
-    color: #fff;
+    color: #EEEEEE;
     font-family: "McLaren", cursive;
     font-weight: 200;
     font-size: x-large;
@@ -46,12 +46,12 @@
   }
   
   footer p {
-    color: #ccc;
+    color: #EEEEEE;
   }
   .note {
-    background: #fff;
+    background: #222831;
     border-radius: 7px;
-    box-shadow: 0 2px 5px #ccc;
+    box-shadow: 0 2px 5px #222831;
     padding: 10px;
     width: 240px;
     margin: 16px;
@@ -61,6 +61,7 @@
     font-family: "McLaren", cursive;
     font-size: 1.1em;
     margin-bottom: 6px;
+    color: #EEEEEE;
   }
   .note p {
     font-family: "McLaren", cursive;
@@ -68,11 +69,13 @@
     margin-bottom: 10px;
     white-space: pre-wrap;
     word-wrap: break-word;
+    color: #EEEEEE;
   }
 
   .note h6 {
     font-family: "McLaren", cursive;
     font-size: xx-small;
+    color: #EEEEEE; 
   }
 
   .note button {
@@ -80,7 +83,7 @@
     position: relative;
     float: right;
     margin-right: 10px;
-    color: #f5ba13;
+    color: #76ABAE;
     border: none;
     cursor: pointer;
     outline: none;
@@ -91,11 +94,15 @@
     position: relative;
     width: 480px;
     margin: 30px auto 20px auto;
-    background: #fff;
     padding: 15px;
     border-radius: 7px;
-    box-shadow: 0 1px 5px rgb(138, 137, 137);
+    box-shadow: 0 1px 5px #222831;
     font-family: "McLaren", cursive;
+    background-color: #222831;
+  }
+
+  ::placeholder {
+    color: #EEEEEE;
   }
   form input,
   form textarea {
@@ -107,18 +114,20 @@
     font-size: 1.1em;
     font-family: inherit;
     resize: none;
+    background-color: #222831;
+    color: #EEEEEE;
   }
 
   form input {
     font-size: 1.2em;
+    color:#EEEEEE
   }
   form button {
     font-family: "McLaren", cursive;
     position: absolute;
     right: 18px;
     bottom: -18px;
-    background: #f5ba13;
-    color: #fff;
+    color: #222831;
     border: none;
     border-radius: 50%;
     width: 36px;
@@ -126,5 +135,7 @@
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
     cursor: pointer;
     outline: none;
+    background-color: #EEEEEE;
+    font-weight: bold;
   }
   
