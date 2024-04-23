@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+import AddIcon from '@mui/icons-material/Add';
 
 export default function MakeNote(props)
 {
-
     const timestamp = new Date().toLocaleString();
+
+    const [isExpanded,setExpanded] = useState(false);
 
     const [note,setNote] = useState({
         title:"",
@@ -29,22 +31,32 @@ export default function MakeNote(props)
             content:"",
             time :""
         })
+        setExpanded(false)
     }
 
 
     return(
         <>
             <form>
-                <input name="title" value={note.title} onChange={handleChange} placeholder="Title" spellCheck="false" />
+
+                { isExpanded && (
+                    <input name="title" 
+                        value={note.title} 
+                        onChange={handleChange} 
+                        placeholder="Title" 
+                        spellCheck="false" />
+                )}
                 <textarea 
                     name="content" 
-                    value={note.content} 
-                    placeholder="Your note here ...." 
-                    rows="3"
+                    value={note.content}
+                    onClick={() => setExpanded(true)}
+                    placeholder="Add note ...." 
+                    rows= {isExpanded ? "3" :"1"}
                     onChange={handleChange}
                     spellCheck="false">
                 </textarea>
-                <button onClick={newNote}>Add</button>
+
+                {isExpanded && (<button onClick={newNote}><AddIcon className="plus"/></button>)}
             </form>
         </>
     )

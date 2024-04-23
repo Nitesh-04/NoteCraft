@@ -13,9 +13,13 @@
   
   header {
     background-color: #222831;
-    margin: auto -16px;
+    margin: auto -20px;
     padding: 16px 32px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  }
+
+  .check{
+    color: #EEEEEE;
   }
   
   header h1 {
@@ -56,6 +60,7 @@
     width: 240px;
     margin: 16px;
     float: left;
+    margin: auto;
   }
   .note h1 {
     font-family: "McLaren", cursive;
@@ -137,5 +142,10 @@
     outline: none;
     background-color: #EEEEEE;
     font-weight: bold;
+  }
+
+  .plus
+  {
+    margin-top: 0.25rem;
   }
   
